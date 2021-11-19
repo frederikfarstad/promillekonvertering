@@ -1,0 +1,53 @@
+/* Color palette: https://coolors.co/393d3f-fdfdff-c6c5b9-62929e-546a7b */
+
+/* BG: 393D3F */
+/* : FDFDFF */
+/* : C6C5B9 */
+/* : 62929E */
+/* : 546A7B */
+
+body {
+    margin: 0;
+}
+
+
+div > video:empty{
+    display: none;
+}
+
+/*_____________VIDEO_____________*/
+
+#videoDiv{
+    width: 100%;
+    background-color: black;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+video{
+    width: 30%;
+    height: auto;
+    padding-left: 35%;
+    padding-right: 35%;
+    z-index: 0;
+    position: relative;
+}
+
+
+
+#videoDiv > p{
+    color:white;
+    text-align: center;
+    z-index: 1;
+    margin: 0;
+    padding-bottom: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-large;
+    position: relative;
+    
+}
+
+/*_____________CALCULATOR_____________*/
+
