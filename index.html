@@ -19,18 +19,23 @@
         <div id="calculatorDiv">
             <form id="calculator">
                 <label> Alcoholpercentage
-                    <input type="number" id="percentInput" name="percent" placeholder="%" required>
+                    <input type="number" id="percentInput" name="percent" placeholder="%" onchange="update()" required>
                 </label>
                 <label> Volume (dl)
-                    <input type="number" id="volumeInput" name="volume" placeholder="0" required>
+                    <input type="number" id="volumeInput" name="volume" placeholder="0" onchange="update()" required>
                 </label>
                 <p>( 1L = 10dl = 100cl = 1000ml )</p>
                 <label>Quantity
-                    <input type="number" id="quantityInput" name="quantity" placeholder="0" required>
+                    <input type="number" id="quantityInput" name="quantity" placeholder="0" onchange="update()" required>
+                </label>
+                <label>Amount of beers (5dl 4.7%)
+                    <input type="number" id="output" name="output" disabled>
+
                 </label>
             </form>
         </div>
     </div>
     
+    <script src="js/calculator.js"></script>
 </body>
 </html>
