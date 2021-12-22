@@ -18,24 +18,27 @@
         </div>
         <div id="calculatorDiv">
             <form id="calculatorForm">
-                <div id="percentageDiv">
-                    <label> Alcoholpercentage
-                        <input type="number" id="percentInput" name="percent" placeholder="%" onchange="update()" required>
-                    </label>
+                <div id="inputDiv">
+                    <div id="percentageDiv">
+                        <label> Alcoholpercentage
+                            <input type="number" id="percentInput" name="percent" placeholder="%" onchange="update()" required>
+                        </label>
+                    </div>
+                    
+                    <div id="volumeDiv">
+                        <label> Volume (dl)
+                            <input type="number" id="volumeInput" name="volume" placeholder="0" onchange="update()" required>
+                        </label>
+                        <p id="convertingChart">( 1L = 10dl = 100cl = 1000ml )</p>
+                    </div>
+                    
+                    <div id="quantityDiv">
+                        <label>Quantity
+                            <input type="number" id="quantityInput" name="quantity" placeholder="0" onchange="update()" required>
+                        </label>
+                    </div>
                 </div>
                 
-                <div id="volumeDiv">
-                    <label> Volume (dl)
-                        <input type="number" id="volumeInput" name="volume" placeholder="0" onchange="update()" required>
-                    </label>
-                    <p id="convertingChart">( 1L = 10dl = 100cl = 1000ml )</p>
-                </div>
-                
-                <div id="quantityDiv">
-                    <label>Quantity
-                        <input type="number" id="quantityInput" name="quantity" placeholder="0" onchange="update()" required>
-                    </label>
-                </div>
                 
                 <div id="outputDiv">
                     <label>Amount of beers (5dl 4.7%)

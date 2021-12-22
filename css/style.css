@@ -24,6 +24,7 @@ div > video:empty{
     padding-top: 10px;
     margin-bottom: 5px;
     position: relative;
+    box-shadow: 0px 5px 10px 10px black;
 }
 
 video{
@@ -55,6 +56,8 @@ video{
     width: 100%;
     height: auto;
     margin: auto;
+    background-color: #393D3F;
+    
 }
 
 #convertingChart {
@@ -65,27 +68,49 @@ video{
 #calculatorForm {
     display: grid;
     grid-template-columns: 7% 40% 6% 40% 7%;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 30px auto;
 }
+
+/*_____________INPUTS_____________*/
+
+#inputDiv {
+    margin: auto;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 200px 200px;
+}
+
 
 #percentageDiv {
     margin: auto;
-    grid-column: 2;
     grid-row: 1;
 }
 
 #volumeDiv {
     margin: auto;
-    grid-column: 2;
     grid-row: 2;
     
 }
 
 #quantityDiv {
     margin: auto;
-    grid-column: 2;
     grid-row: 3;
 }
+
+#inputDiv label{
+    grid-column: 1;
+    grid-row: inherit;
+}
+
+#inputDiv input{
+    grid-column: 2;
+    grid-row: inherit;
+}
+
+
+/*_____________OUTPUTS_____________*/
 
 #outputDiv {
     grid-column: 4;
