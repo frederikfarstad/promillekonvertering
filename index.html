@@ -19,35 +19,28 @@
         <div id="calculatorDiv">
             <form id="calculatorForm">
                 <div id="inputDiv">
-                    <div id="percentageDiv">
-                        <label> Alcoholpercentage
-                            <input type="number" id="percentInput" name="percent" placeholder="%" onchange="update()" required>
-                        </label>
-                    </div>
+                    <p class="titles">Calculate:</p>
+                    <p id="convertingChart">( 1L = 10dl = 100cl = 1000ml )</p>
+                    <label for="percent"> Alcoholpercentage</label>
+                    <input type="number" id="percentInput" name="percent" placeholder="%" onchange="update()" required>
                     
-                    <div id="volumeDiv">
-                        <label> Volume (dl)
-                            <input type="number" id="volumeInput" name="volume" placeholder="0" onchange="update()" required>
-                        </label>
-                        <p id="convertingChart">( 1L = 10dl = 100cl = 1000ml )</p>
-                    </div>
+                    <label for="volume"> Volume (dl)</label>
+                    <input type="number" id="volumeInput" name="volume" placeholder="0" onchange="update()" required>
                     
-                    <div id="quantityDiv">
-                        <label>Quantity
-                            <input type="number" id="quantityInput" name="quantity" placeholder="0" onchange="update()" required>
-                        </label>
-                    </div>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantityInput" name="quantity" placeholder="0" onchange="update()" required>
                 </div>
                 
-                
                 <div id="outputDiv">
-                    <label>Amount of beers (5dl 4.7%)
-                        <input type="number" id="output" name="output" disabled>
-    
-                    </label>
+                    <p class="titles">Results:</p>
+                    <label for="output">Amount of beers<br>(5dl 4.7%)</label>
+                    <input type="number" id="output" name="output" disabled>
                 </div>
                 
             </form>
+            <div id="fillDiv">
+
+            </div>
         </div>
     </div>
     
