@@ -1,13 +1,20 @@
 /* Color palette: https://coolors.co/393d3f-fdfdff-c6c5b9-62929e-546a7b */
 
 /* BG: 393D3F */
-/* : FDFDFF */
+/* Text: FDFDFF */
 /* : C6C5B9 */
 /* : 62929E */
 /* : 546A7B */
 
+html {
+    margin: 0;
+    height: 100%;
+}
+
+
 body {
     margin: 0;
+    height: 100%;
 }
 
 
@@ -24,6 +31,7 @@ div > video:empty{
     padding-top: 10px;
     margin-bottom: 5px;
     position: relative;
+    box-shadow: 0px 5px 10px 10px black;
 }
 
 video{
@@ -38,7 +46,7 @@ video{
 
 
 #videoDiv > p{
-    color:white;
+    color:#FDFDFF;
     text-align: center;
     z-index: 1;
     margin: 0;
@@ -51,3 +59,143 @@ video{
 
 /*_____________CALCULATOR_____________*/
 
+#calculatorDiv {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #393D3F;
+    color: #FDFDFF; 
+    
+}
+
+#calculatorForm {
+    display: grid;
+    grid-template-columns: 7% 40% 6% 40% 7%;
+    grid-template-rows: 30px auto;
+}
+
+.titles{
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    width: fit-content;
+    margin: auto;
+    grid-column: 1 / span 2;
+}
+
+#fillDiv {
+    height: 40vh;
+    margin:auto;
+}
+
+/*_____________INPUTS_____________*/
+
+#inputDiv {
+    font-family:'Courier New', Courier, monospace;
+    margin: auto;
+    height: auto;
+    padding: 10px 0px 20px 0px;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px;
+    background-color: #62929E;
+    border-radius: 10px;
+}
+
+
+#inputDiv label{
+    grid-column: 1;
+    margin:auto 20px;
+}
+
+#inputDiv input{
+    grid-column: 2;
+    margin: 2px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    
+    
+}
+
+
+
+input:hover{
+    box-shadow: 0px 0px 20px #546A7B;
+}
+
+#convertingChart {
+    width: fit-content;
+    margin: auto;
+    grid-column: 1 / span 2;
+}
+
+/*_____________OUTPUTS_____________*/
+
+#outputDiv {
+    height: auto;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+    font-family:'Courier New', Courier, monospace;
+    grid-column: 4;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 200px 200px;
+    background-color: #62929E;
+    border-radius: 10px;
+
+    
+}
+
+#outputDiv label{
+    grid-column: 1;
+    margin:auto 20px;
+}
+
+#outputDiv input{
+    grid-column: 2;
+    margin: 2px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: black;
+}
+
+/*_____________REACTIVE DESIGN_____________*/
+
+@media screen and (max-width:1000px){
+    #calculatorForm {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 30px auto 30px auto;
+    }
+
+    #outputDiv {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    
+    #calculatorForm {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30px auto 30px auto;
+    }
+
+    #outputDiv {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #inputDiv {
+        
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+}

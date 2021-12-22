@@ -11,28 +11,36 @@
     <div id="wrapper">
         <div id="videoDiv">
             <video autoplay loop>
-                <source src="video/Beer - 59600.mp4" type="video/mp4" id="beerVideo">
+                <source src="video/Beer59600.mp4" type="video/mp4" id="beerVideo">
             </video>
             <p>Alcohol Converter</p>
             
         </div>
         <div id="calculatorDiv">
-            <form id="calculator">
-                <label> Alcoholpercentage
+            <form id="calculatorForm">
+                <div id="inputDiv">
+                    <p class="titles">Calculate:</p>
+                    <p id="convertingChart">( 1L = 10dl = 100cl = 1000ml )</p>
+                    <label for="percent"> Alcoholpercentage</label>
                     <input type="number" id="percentInput" name="percent" placeholder="%" onchange="update()" required>
-                </label>
-                <label> Volume (dl)
+                    
+                    <label for="volume"> Volume (dl)</label>
                     <input type="number" id="volumeInput" name="volume" placeholder="0" onchange="update()" required>
-                </label>
-                <p>( 1L = 10dl = 100cl = 1000ml )</p>
-                <label>Quantity
+                    
+                    <label for="quantity">Quantity</label>
                     <input type="number" id="quantityInput" name="quantity" placeholder="0" onchange="update()" required>
-                </label>
-                <label>Amount of beers (5dl 4.7%)
+                </div>
+                
+                <div id="outputDiv">
+                    <p class="titles">Results:</p>
+                    <label for="output">Amount of beers<br>(5dl 4.7%)</label>
                     <input type="number" id="output" name="output" disabled>
-
-                </label>
+                </div>
+                
             </form>
+            <div id="fillDiv">
+
+            </div>
         </div>
     </div>
     
